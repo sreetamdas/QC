@@ -11,7 +11,7 @@ $(document).ready(function () {
             zoom: 9,
 
             // The latitude and longitude to center the map (always required)
-            center: new google.maps.LatLng(17.985543, 79.530713), // NIT Warangal
+            center: new google.maps.LatLng(17.7, 79.1), // NIT Warangal
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
