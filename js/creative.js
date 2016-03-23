@@ -35,6 +35,11 @@
         }
     );
 
+    $('.counter').counterUp({
+            delay: 100,
+            time: 2000
+        });
+
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {

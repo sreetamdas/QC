@@ -6,6 +6,10 @@
     font-family: Bohema;
     src: url(Bohema.otf);
 }
+@font-face {
+    font-family: Kilogram;
+    src: url(Kilogram.otf);
+}
 html,
 body {
     width: 100%;
@@ -105,7 +109,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: whitesmoke;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -295,6 +299,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
     font-family: 'Courier New','Helvetica Neue',Arial,sans-serif;
+    font-weight: 600;   
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
