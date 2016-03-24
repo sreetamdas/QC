@@ -503,3 +503,11 @@ body {
     font-family: 'Courier New';
     color: navajowhite;
 }
+
+.kilogram {
+    font-family: Kilogram; !important
+}
+
+.orange {
+    color: #ff704d;
+}
