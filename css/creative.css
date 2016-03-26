@@ -10,6 +10,18 @@
     font-family: Kilogram;
     src: url(Kilogram.otf);
 }
+@font-face {
+    font-family: Friends;
+    src: url(Friends.ttf);
+}
+@font-face {
+    font-family: Infinity;
+    src: url(Infinity.ttf);
+}
+@font-face {
+    font-family: Ailerons;
+    src: url(Ailerons.otf);
+}
 html,
 body {
     width: 100%;
@@ -508,6 +520,14 @@ body {
     font-family: Kilogram; !important
 }
 
+.friends {
+    font-family: Friends; !important
+}
+
 .orange {
     color: #ff704d;
+}
+
+.dark {
+    color: #222;
 }
