@@ -523,6 +523,17 @@ body {
 .friends {
     font-family: Friends; !important
 }
+.infinity {
+    font-family: Infinity; !important
+    font-weight: bold !important
+}
+.ailerons {
+    font-family: Ailerons; !important
+}
+
+.monospace {
+    font-family: monospace; !important
+}
 
 .orange {
     color: #ff704d;
