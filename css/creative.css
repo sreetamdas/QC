@@ -22,6 +22,14 @@
     font-family: Ailerons;
     src: url(Ailerons.otf);
 }
+@font-face {
+    font-family: FontAwesome;
+    src: url(FontAwesome.otf);
+}
+@font-face {
+    font-family: AmericanCaptain;
+    src: url(AmericanCaptain.ttf);
+}
 html,
 body {
     width: 100%;
@@ -531,6 +539,14 @@ body {
     font-family: Ailerons; !important
 }
 
+.americanCaptain {
+    font-family: AmericanCaptain; !important
+}
+
+.fontAwesome {
+    font-family: FontAwesome; !important
+}
+
 .monospace {
     font-family: monospace; !important
 }
@@ -541,4 +557,18 @@ body {
 
 .dark {
     color: #222;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+#credits a:hover{
+    text-decoration: none; !important
+    color: darksalmon; !important
+}
+
+#credits a{
+    color: palegreen;
+    border-bottom: dotted 1px;
 }
