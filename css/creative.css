@@ -150,7 +150,7 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
+        /*border-color: rgba(255,255,255,.3);*/
         background-color: transparent;
     }
 
@@ -570,5 +570,8 @@ body {
 
 #credits a{
     color: palegreen;
-    border-bottom: dotted 1px;
+}
+
+.noUnderline a:hover{
+    text-decoration: none; !important
 }
