@@ -115,13 +115,13 @@ aside {
    /* text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
     font-weight: 700;
-    color: #f05f40;
+    color: #ff704d;
     font-size: 22px;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #ff704d;
 }
 
 .navbar-default .nav > li>a,
@@ -179,8 +179,8 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 18px;
-        color: #f05f40;
+        font-size: 22px;
+        color: beige; !important
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -574,4 +574,10 @@ body {
 
 .noUnderline a:hover{
     text-decoration: none; !important
+}
+
+#scrollDown {
+    position: absolute;
+    top: 90%;
+    left: 45%
 }
