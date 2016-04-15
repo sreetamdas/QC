@@ -166,7 +166,7 @@
       var text, value, variations;
       text = element.getAttribute("data-typist");
       value = this._getHtml(element);
-      variations = text.split(",");
+      variations = text.split(",?");
       variations.splice(0, 0, value);
       return variations;
     };
