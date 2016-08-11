@@ -30,6 +30,10 @@
     font-family: AmericanCaptain;
     src: url(AmericanCaptain.ttf);
 }
+@font-face {
+    font-family: TrajanPro;
+    src: url(TrajanPro.ttf);
+}
 html,
 body {
     width: 100%;
@@ -301,9 +305,9 @@ header .header-content .header-content-inner p {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: black;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(248,95,64,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -320,7 +324,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Courier New','Helvetica Neue',Arial,sans-serif;
+    font-family: TrajanPro, 'Courier New','Helvetica Neue',Arial,sans-serif;
     font-weight: 600;   
 }
 
@@ -344,7 +348,7 @@ header .header-content .header-content-inner p {
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 30px;
+        font-size: 48px;
     }
 }
 
@@ -549,6 +553,10 @@ body {
     font-family: FontAwesome; !important
 }
 
+.trajanPro {
+    font-family: TrajanPro; !important
+}
+
 .monospace {
     font-family: monospace; !important
 }
@@ -572,6 +580,10 @@ body {
 
 #credits a{
     color: palegreen;
+}
+
+.noUnderline a:visited{
+    text-decoration: none; !important
 }
 
 .noUnderline a:hover{
