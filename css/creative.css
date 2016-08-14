@@ -61,9 +61,17 @@ a {
     transition: all .35s;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: coral;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 h1,
@@ -597,11 +605,11 @@ body {
 }
 
 #agoogleaday::-webkit-scrollbar {
-    display: none;
+    display: none; !important
 }
 
 #AGoogleADay::-webkit-scrollbar {
-    display: none;
+    display: none; !important
 }
 
 #agoogleaday {
@@ -613,4 +621,8 @@ body {
 }
 ::-webkit-scrollbar {
     display: none;
+}
+
+#copyright {
+    text-align: right;
 }
