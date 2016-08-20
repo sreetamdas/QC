@@ -30,6 +30,10 @@
     font-family: AmericanCaptain;
     src: url(AmericanCaptain.ttf);
 }
+@font-face {
+    font-family: TrajanPro;
+    src: url(TrajanPro.ttf);
+}
 html,
 body {
     width: 100%;
@@ -57,9 +61,17 @@ a {
     transition: all .35s;
 }
 
+a:visited {
+    text-decoration: none;
+}
+
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: coral;
+}
+
+a:visited {
+    text-decoration: none;
 }
 
 h1,
@@ -301,9 +313,9 @@ header .header-content .header-content-inner p {
     width: 100%;
     height: 100%;
     text-align: center;
-    color: #fff;
+    color: black;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(248,95,64,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -320,7 +332,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Courier New','Helvetica Neue',Arial,sans-serif;
+    font-family: TrajanPro, 'Courier New','Helvetica Neue',Arial,sans-serif;
     font-weight: 600;   
 }
 
@@ -344,7 +356,7 @@ header .header-content .header-content-inner p {
     }
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 30px;
+        font-size: 48px;
     }
 }
 
@@ -549,6 +561,10 @@ body {
     font-family: FontAwesome; !important
 }
 
+.trajanPro {
+    font-family: TrajanPro; !important
+}
+
 .monospace {
     font-family: monospace; !important
 }
@@ -574,6 +590,10 @@ body {
     color: palegreen;
 }
 
+.noUnderline a:visited{
+    text-decoration: none; !important
+}
+
 .noUnderline a:hover{
     text-decoration: none; !important
 }
@@ -585,11 +605,11 @@ body {
 }
 
 #agoogleaday::-webkit-scrollbar {
-    display: none;
+    display: none; !important
 }
 
 #AGoogleADay::-webkit-scrollbar {
-    display: none;
+    display: none; !important
 }
 
 #agoogleaday {
@@ -601,4 +621,18 @@ body {
 }
 ::-webkit-scrollbar {
     display: none;
+}
+
+#copyright {
+    text-align: right;
+}
+
+.noScrolling {
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+
+.iframeContainer {
+    overflow: hidden; !important
 }

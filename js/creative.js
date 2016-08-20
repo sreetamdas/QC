@@ -37,7 +37,7 @@
 
     $('.counter').counterUp({
             delay: 100,
-            time: 2000
+            time: 1500
         });
 
     // Offset for Main Navigation

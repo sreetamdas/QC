@@ -205,5 +205,11 @@ $(document).ready(function () {
             map: map,
             title: 'Quiz Club NITW'
         });
-    }
+        var infowindow = new google.maps.InfoWindow({
+          content: '<div class="orange" style="font-weight: 700; font-size: 20px">Quiz Club  NITW</div>'
+        });
+        marker.addListener('click', function() {
+          infowindow.open(map, marker);
+        });
+        }
 });
