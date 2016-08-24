@@ -119,15 +119,10 @@
                         <div class="col-md-2 col-lg-2" style="padding-top: 2em">
                             <h4 style="padding-top: 20px;" align="right">Year of Study : </h4></div>
                         <div class="col-md-4 col-lg-4" style="padding-top: 2em">
-                            <div>
-                                <input type="radio" id="2ndYear" name="Year" value="2nd" />
-                                <label for="2ndYear"><span></span>2nd Year BTech</label>
-                            </div>
-
-                            <div>
-                                <input type="radio" id="3rdYear" name="Year" value="3rd" />
-                                <label for="3rdYear"><span></span>3rd Year BTech</label>
-                            </div>
+                            <input type="radio" id="2ndYear" name="Year" value="2nd">
+                            <label for="2ndYear"><span></span>2nd Year BTech</label>
+                            <input type="radio" id="3rdYear" name="Year" value="3rd">
+                            <label for="3rdYear"><span></span>3rd Year BTech</label>
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <p></p>
@@ -138,7 +133,19 @@
                         <div class="col-md-2 col-lg-2">
                             <h4 style="padding-top: 13px;" align="right">Branch : </h4></div>
                         <div class="col-md-4 col-lg-4">
-                            <input type="text" name="Branch" id="Branch" value="" placeholder="Branch" required/>
+                            <div class="select-wrapper">
+                                <select name="Branch" id="Branch" required>
+                                    <option value="">-Select-</option>
+                                    <option value="BioTech">BioTech</option>
+                                    <option value="Chemical">Chemical</option>
+                                    <option value="Civil">Civil</option>
+                                    <option value="CSE">CSE</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="EEE">EEE</option>
+                                    <option value="Mech">Mech</option>
+                                    <option value="MME">MME</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <p></p>
@@ -186,7 +193,7 @@
                         <div class="col-lg-1 col-md-1">
                             <p></p>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="row">
                         <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
@@ -204,9 +211,9 @@
                         </div>
                     </div>
                     <div class="row" style="padding-top: 2em">
-                    <div class="col-md-12 col-lg-12" align="center">
+                        <div class="col-md-12 col-lg-12" align="center">
                             <input type="submit">
-                            <p style="color: #e97425; padding-top: 2em; font-size: 18px; font-weight: 700;" >After submitting, please DO NOT REFRESH until you receive confirmation that the form has been submitted succesfully.</p>
+                            <p style="color: #e97425; padding-top: 2em; font-size: 18px; font-weight: 700;">After submitting, please DO NOT REFRESH until you receive confirmation that the form has been submitted succesfully.</p>
                         </div>
                     </div>
                 </div>
