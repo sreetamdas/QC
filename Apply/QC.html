@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="../css/creative.css" type="text/css">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="css/optiscroll.css" type="text/css">
+    <style>
+
+    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,20 +77,47 @@
     </nav>
 
     <section class="bg-dark" id="top">
-        <h1 class="infinity text-center orange">Application for<br>Quiz Club 2016-17 Executive Body</h1>
+        <h1 class="infinity text-center orange">Application for<br>Quiz Club 2016-17 Executive Body<br>First Years only</h1>
     </section>
 
     <section id="theTeam" class="bg-dark" style="padding-top: 0">
         <div class="container-fluid">
             <!--iframe name="votar" style="display:none;"></iframe-->
-            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwGGf8x5GYUKDga6eU6j0WldMt6-7IqPDLGXSA1yyP-CYmeem4/exec" style="color: black" class="navbar-form">
+            <form id="gform" method="POST" action="#" style="color: black" class="navbar-form">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-3"></div>
                         <div class="col-md-2 col-lg-2">
-                            <h4 style="padding-top: 13px;" align="right">Name : </h4></div>
+                            <h4 style="padding-top: 13px;" align="right">Section : </h4></div>
                         <div class="col-md-4 col-lg-4">
-                            <input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
+                            <div class="select-wrapper">
+                                <select name="Section" id="Section" required>
+                                    <option value="">-Select-</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="E">E</option>
+                                    <option value="F">F</option>
+                                    <option value="G">G</option>
+                                    <option value="H">H</option>
+                                    <option value="K">K</option>
+                                    <option value="L">L</option>
+                                    <option value="M">M</option>
+                                    <option value="N">N</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-3 col-lg-3">
+                            <h4 style="padding-top: 13px;" align="right">Registration No. : <br><span style="font-weight: 400; font-size: 14px">Same as Roll No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></h4></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" name="Roll" id="Roll" value="" placeholder="Roll No." required/>
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <p></p>
@@ -96,9 +126,9 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-3"></div>
                         <div class="col-md-2 col-lg-2">
-                            <h4 style="padding-top: 13px;" align="right">Roll No. : </h4></div>
+                            <h4 style="padding-top: 13px;" align="right">Name : </h4></div>
                         <div class="col-md-4 col-lg-4">
-                            <input type="text" name="Roll" id="Roll" value="" placeholder="Roll No." required/>
+                            <input type="text" name="Name" id="Name" value="" placeholder="Name" required/>
                         </div>
                         <div class="col-lg-3 col-md-3">
                             <p></p>
@@ -116,6 +146,17 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-md-2 col-lg-2">
+                            <h4 style="padding-top: 13px;" align="right">Phone No. : </h4></div>
+                        <div class="col-md-4 col-lg-4">
+                            <input type="text" name="Phone No." id="Phone" value="" placeholder="Phone No." required/>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <p></p>
+                        </div>
+                    </div>
+                    <!--div class="row">
                         <div class="col-lg-3 col-md-3"></div>
                         <div class="col-md-2 col-lg-2" style="padding-top: 2em">
                             <h4 style="padding-top: 20px;" align="right">Year of Study : </h4></div>
@@ -151,27 +192,17 @@
                         <div class="col-lg-3 col-md-3">
                             <p></p>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3"></div>
-                        <div class="col-md-2 col-lg-2">
-                            <h4 style="padding-top: 13px;" align="right">Phone No. : </h4></div>
-                        <div class="col-md-4 col-lg-4">
-                            <input type="text" name="Phone No." id="Phone" value="" placeholder="Phone No." required/>
-                        </div>
-                        <div class="col-lg-3 col-md-3">
-                            <p></p>
-                        </div>
-                    </div>
+                    </div-->
                     <div class="row">
                         <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
                             <h4 style="padding-top: 53px;" align="center">Describe your prior quizzing experience:</h4>
+                            <p style="color: white" align="center">Mention the prizes you have won in previously attended quizzes/ or qualification till a particular stage of named or renowned quizzes. Experience at school/district/state/national/international level should DEFINITELY be mentioned If you have no experience, please write "No previous quizzing experience".</p>
                         </div>
                         <div class="col-lg-2 col-md-2"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
                             <textarea name="Previous Experience" id="experience" value="" placeholder="Previous Quizzing Experience" rows="4" required></textarea>
                         </div>
@@ -182,12 +213,16 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
-                            <h4 style="padding-top: 53px;" align="center">What can <em><strong>you</strong></em> contribute to the club?</h4>
+                            <h4 style="padding-top: 53px;" align="center">We want to try and know you. Describe yourself in about 100 words.</h4>
+                            <p style="color: white" align="center">Introduce, yourself, your likes, dislikes, hobbies, why you feel Quiz Club is worth your time, and why Quiz Club needs someone like you.
+                                <br>Sell yourself in an optimum manner!
+                                <br>IF YOU HAVE any specific skill set like Graphic Design (Adobe Photoshop, Illustrator etc), Poster Design, Web Development (HTML/CSS), or anything else,
+                                <br><em style="font-weight: 700">DO MENTION IT HERE!</em></p>
                         </div>
                         <div class="col-lg-2 col-md-2"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
                             <textarea name="Contribution" id="contribution" value="" placeholder="Contribution to the club" rows="3" required></textarea>
                         </div>
@@ -198,14 +233,92 @@
                     <div class="row">
                         <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
-                            <h4 style="padding-top: 53px;" align="center">If you were given a chance to host a quiz,<br> which topics would you choose?</h4>
+                            <h4 style="padding-top: 53px;" align="center">Favourite Topics</h4>
+                            <p style="color: white" align="center">If you were to be asked questions on a particular topic (Eg: Current affairs, music, art, Entertainment, Bollywood, General Knowledge, Technology, Corporate, Business etc), what would they be?
+                                <br><span style="font-weight: 700">Please answer in DESCENDING ORDER OF PRIORITY.</span>
+                                <br>Eg: 1. Current Affairs 2. Art 3. Popular culture</p>
                         </div>
                         <div class="col-lg-2 col-md-2"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 col-md-3"></div>
+                        <div class="col-lg-2 col-md-2"></div>
                         <div class="col-md-8 col-lg-8">
                             <textarea name="Topics" id="topics" value="" placeholder="Topics" rows="2" required></textarea>
+                        </div>
+                        <div class="col-lg-1 col-md-1">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <h4 style="padding-top: 53px;" align="center">Please choose your most preferred role within the club</h4>
+                            <p style="color: white" align="center">Choose your most preferred role in the club.
+                                <br>Certain people like to only quiz, while certain people are better event organizers and managers.
+                                <br>It might be a hard choice, but you have to make <span style="font-weight: 700">one</span>!
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12" style="padding-top: 2em">
+                            <input type="radio" id="Quizzing" name="Role" value="Quizzing" required>
+                            <label for="Quizzing"><span style="font-weight: 700">Quizzing</span> - I'd like to be participating in quizzes, and try and form teams within college and inter-college level.
+                            </label>
+                            <input type="radio" id="Organizing" name="Role" value="Organizing" required>
+                            <label for="Organizing"><span style="font-weight: 700">Organizing</span> - Inludes permissions, online and offline publicity, venue handling, crowd management, score management etc.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <h4 style="padding-top: 53px;" align="center">Assume you are in charge of conducting The Freshers Quiz hosted in all the first year sections of NIT-W, next year.<br>Mention a 4/5 point procedure of how you would go about things.</h4>
+                            <p style="color: white" align="center">If you enjoyed the Freshers prelims, this shouldn't be too hard to answer!
+                                <br>Mention what your first step would be, how you would identify your team, how you would coordinate with your team members, what technical or non-technical resources would need to have beforehand etc.
+                                <br><span style="font-weight: 700">Please answer STEP wise. Eg: 1)....2).....</span></p>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <textarea name="Procedure" id="procedure" value="" placeholder="Procedure" rows="2" required></textarea>
+                        </div>
+                        <div class="col-lg-1 col-md-1">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <h4 style="padding-top: 53px;" align="center">You are hosting a quiz using a laptop and a projector. Midway, the power goes out. What would you do?</h4>
+                            <p style="color: white" align="center"></p>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <textarea name="Power Cut" id="powerCut" value="" placeholder="Procedure" rows="2" required></textarea>
+                        </div>
+                        <div class="col-lg-1 col-md-1">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <h4 style="padding-top: 53px;" align="center">Ask us three questions (relevant to quizzing). Use it.</h4>
+                            <p style="color: white" align="center">If you think you're creative,
+                                <br><em style="font-weight: 700">show it here!</em></p>
+                        </div>
+                        <div class="col-lg-2 col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2"></div>
+                        <div class="col-md-8 col-lg-8">
+                            <textarea name="Questions" id="Questions" value="" placeholder="Questions" rows="2" required></textarea>
                         </div>
                         <div class="col-lg-1 col-md-1">
                             <p></p>
@@ -277,7 +390,6 @@
     <script src="js/typistCustom.js"></script>
     <script src="js/optiscroll.js"></script>
     <script>
-        
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {

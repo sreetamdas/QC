@@ -619,9 +619,6 @@ body {
 #AGoogleADay {
     overflow: hidden;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 
 #copyright {
     text-align: right;
