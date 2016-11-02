@@ -34,6 +34,10 @@
     font-family: TrajanPro;
     src: url(TrajanPro.ttf);
 }
+@font-face {
+    font-family: HarryPotter;
+    src: url(HarryPotter.ttf);
+}
 html,
 body {
     width: 100%;
@@ -567,6 +571,10 @@ body {
 
 .monospace {
     font-family: monospace; !important
+}
+
+.harryPotter {
+    font-family: HarryPotter !important;
 }
 
 .orange {
