@@ -38,6 +38,36 @@
     font-family: HarryPotter;
     src: url(HarryPotter.ttf);
 }
+
+@font-face {
+    font-family: SharpUnity;
+    src: url(SharpUnity-Extrabold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnitySB;
+    src: url(SharpUnity-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnityBook;
+    src: url(SharpUnity-Book.ttf);
+}
+.sharpUnity {
+    font-family: SharpUnity;
+    text-transform: none;
+}
+
+.sharpUnitySB {
+    font-family: SharpUnitySB;
+    text-transform: none;
+}
+
+.sharpUnityBook {
+    font-family: SharpUnityBook;
+    text-transform: none;
+}
+
 html,
 body {
     width: 100%;
@@ -59,7 +89,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #ff4425;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -99,7 +129,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #000;
 }
 
 .text-faded {
@@ -578,7 +608,7 @@ body {
 }
 
 .orange {
-    color: #ff704d;
+    color: #ff4425;
 }
 
 .dark {
