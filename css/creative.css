@@ -221,7 +221,7 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #333333;
+        background-color: #000;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -663,11 +663,35 @@ body {
 }
 
 .noScrolling {
-    overflow: hidden;
+    overflow-y: hidden;
     width: 100%;
-    height: 350px;
+    height: 380px;
 }
 
 .iframeContainer {
     overflow: hidden; !important
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: .75em;
+  }
+  20% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: .75em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  80% {
+    font-size: .75em;
+  }
+  100% {
+    font-size: .75em;
+  }
+}
+#heart {
+  animation: heartbeat 1s infinite;
 }

@@ -81,37 +81,63 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 text-center">
-<!--                    <ul class='circle-container'>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
-<!--                    </ul>-->
+
+                    <div id="page-wrapper">
+
+                        <h1>Text File Reader</h1>
+                        <p id="fileDisplayArea"></p>
+
+                    </div>
+                    <script>
+                        var fileDisplayArea = document.getElementById('fileDisplayArea');
+
+                        function readTextFile(file) {
+                            var rawFile = new XMLHttpRequest();
+                            rawFile.open("GET", file, false);
+                            rawFile.onreadystatechange = function () {
+                                if (rawFile.readyState === 4) {
+                                    if (rawFile.status === 200 || rawFile.status == 0) {
+                                        var allText = rawFile.responseText;
+                                        fileDisplayArea.innerText = allText
+                                    }
+                                }
+                            }
+                            rawFile.send(null);
+                        }
+
+                        readTextFile("http://agad-gplus.appspot.com/partners/question_of_day/3?userId=E913597A-9A1B-11E1-8C0B-12F36188709B");
+                    </script>
+                    <!--                    <ul class='circle-container'>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    <li><img src='img/Team/TheDarkKnight.png'></li>-->
+                    <!--                    </ul>-->
                     <div class="col-lg-12 text-center" style="padding-bottom: 100px">
                         <img src="img/Team/Neel.png" height=200px>
                         <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/neel.karnik.7">Neel Karnik</a>
@@ -139,7 +165,8 @@
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Ivy.png" height=200px class="img-circle">
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/ivy.maji.3">Ivy Maji</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">From the frying pan into the molten cheese</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/ivy.maji.3">Ivy Maji</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">From the frying pan into the molten cheese</span></p>
                     </div>
                     <div class="col-lg-12 col-md-12 text-center" style="padding-top: 100px">
                     </div>
@@ -151,12 +178,14 @@
                     </div>
                     <div class="col-lg-4 col-md-4 text-center">
                         <img src="img/Team/Rishabh.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/rkarajgi">Rishabh Karajgi</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Find my quote on <a href="http://www.overknighters.com/">EventHub</a></span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/rkarajgi">Rishabh Karajgi</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Find my quote on <a href="http://www.overknighters.com/">EventHub</a></span></p>
 
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Satyam.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/satyam.trivedi.35">Satyam Trivedi</a><br><span class="precursive" style="font-size: 1.7em; padding-top: 0">" "</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/satyam.trivedi.35">Satyam Trivedi</a>
+                            <br><span class="precursive" style="font-size: 1.7em; padding-top: 0">" "</span></p>
                     </div>
                     <div class="col-lg-12 col-md-12 text-center" style="padding-top: 100px">
                     </div>
@@ -201,17 +230,20 @@
                     </div>
                     <div class="col-lg-4 col-md-4 text-center">
                         <img src="img/Team/Jahnawi.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/jahnawi.priya">Jahnawi Priya</a><br><span class="precursive" style="font-size: 1.0em; padding-top: 0">i</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/jahnawi.priya">Jahnawi Priya</a>
+                            <br><span class="precursive" style="font-size: 1.0em; padding-top: 0">i</span></p>
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Milind.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/milind.sheth.7">Milind Sheth</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Branch change please</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/milind.sheth.7">Milind Sheth</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Branch change please</span></p>
                     </div>
                     <div class="col-lg-12 col-md-12 text-center" style="padding-top: 100px">
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Moujiz.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/moujiz.d">Moujiz Ali D</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">I &#x2764; Dhokla</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/moujiz.d">Moujiz Ali D</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">I &#x2764; Dhokla</span></p>
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Ranul.png" height=200px>
@@ -219,11 +251,13 @@
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Sai.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/saikumar.reddy.14">Sai Kumar Reddy</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Deal Pakka Ho Jayega Bhai</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/saikumar.reddy.14">Sai Kumar Reddy</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Deal Pakka Ho Jayega Bhai</span></p>
                     </div>
                     <div class="col-lg-3 col-md-3 text-center">
                         <img src="img/Team/Shashank.png" height=200px>
-                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/shashank.kasala">Shashank Kasala</a><br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Waiting for my Hogwarts Acceptance</span></p>
+                        <p class="americanCaptain noUnderline" style="font-size: 3em"><a href="https://www.facebook.com/shashank.kasala">Shashank Kasala</a>
+                            <br><span class="precursive" style="font-size: 0.7em; padding-top: 0">Waiting for my Hogwarts Acceptance</span></p>
                     </div>
                     <div class="col-lg-12 col-md-12 text-center" style="padding-top: 100px">
                         <img src="img/Team/TheDarkKnight.png" height=200px>
