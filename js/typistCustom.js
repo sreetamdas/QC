@@ -18,4 +18,13 @@
         textInterval: 3000
     });
 
+    var QQuote;
+
+    QQuote = document.querySelector("#QuizQuote");
+
+    new Typist(QQuote, {
+        letterInterval: 60,
+        textInterval: 3000
+    });
+
 }).call(this);
