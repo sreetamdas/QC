@@ -34,6 +34,40 @@
     font-family: TrajanPro;
     src: url(TrajanPro.ttf);
 }
+@font-face {
+    font-family: HarryPotter;
+    src: url(HarryPotter.ttf);
+}
+
+@font-face {
+    font-family: SharpUnity;
+    src: url(SharpUnity-Extrabold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnitySB;
+    src: url(SharpUnity-Semibold.ttf);
+}
+
+@font-face {
+    font-family: SharpUnityBook;
+    src: url(SharpUnity-Book.ttf);
+}
+.sharpUnity {
+    font-family: SharpUnity;
+    text-transform: none;
+}
+
+.sharpUnitySB {
+    font-family: SharpUnitySB;
+    text-transform: none;
+}
+
+.sharpUnityBook {
+    font-family: SharpUnityBook;
+    text-transform: none;
+}
+
 html,
 body {
     width: 100%;
@@ -55,7 +89,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #ff4425;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -95,7 +129,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #000;
 }
 
 .text-faded {
@@ -187,7 +221,7 @@ aside {
 
     .navbar-default.affix {
         border-color: rgba(34,34,34,.05);
-        background-color: #333333;
+        background-color: #000;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
@@ -569,8 +603,12 @@ body {
     font-family: monospace; !important
 }
 
+.harryPotter {
+    font-family: HarryPotter !important;
+}
+
 .orange {
-    color: #ff704d;
+    color: #ff4425;
 }
 
 .dark {
@@ -619,20 +657,41 @@ body {
 #AGoogleADay {
     overflow: hidden;
 }
-::-webkit-scrollbar {
-    display: none;
-}
 
 #copyright {
     text-align: right;
 }
 
 .noScrolling {
-    overflow: hidden;
+    overflow-y: hidden;
     width: 100%;
-    height: 350px;
+    height: 380px;
 }
 
 .iframeContainer {
     overflow: hidden; !important
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: .75em;
+  }
+  20% {
+    font-size: 1em;
+  }
+  40% {
+    font-size: .75em;
+  }
+  60% {
+    font-size: 1em;
+  }
+  80% {
+    font-size: .75em;
+  }
+  100% {
+    font-size: .75em;
+  }
+}
+#heart {
+  animation: heartbeat 1s infinite;
 }
