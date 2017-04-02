@@ -51,11 +51,11 @@ Theme used : [Creative](http://startbootstrap.com/template-overviews/creative/),
        <div class="modal-content bg-dark">
          <div class="modal-header">
            <button type="button" class="close" data-dismiss="modal">&times;</button>
-           <h4 class="modal-title trajanPro text-center" style="font-size: 58px"><<QuizName>></h4>
+           <h4 class="modal-title trajanPro text-center" style="font-size: 58px"><- QuizName -></h4>
           </div>
           <div class="modal-body container text-center trajanPro noUnderline">
           <!-- If multiple PPTs for multiple rounds (Prelims, Pounce, etc.), reiterate the below code block (the `a` and `p` tags) -->
-            <a href="#<- QuizName -><- Round ->Modal" data-toggle="modal" class="text-center quiz_link" style="font-size: 44px">Prelims</a> <!-- if single PPT, replace <- Round -> with any keyword, eg: All; which makes the href="#TharakQuizAllModal" -->
+            <a href="#<- QuizName -><- Round ->Modal" data-toggle="modal" class="text-center quiz_link" style="font-size: 44px"><- Round -></a> <!-- if single PPT, replace <- Round -> with any keyword, eg: All; which makes the href="#TharakQuizAllModal" -->
             <p class="monospace"></p> <!-- if any "subtitles" -->
          </div>
        </div>
