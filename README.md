@@ -6,15 +6,72 @@ Theme used : [Creative](http://startbootstrap.com/template-overviews/creative/),
 
 ​	Look over the file directory to get yourself familiarised with the structure followed. All `assets` are organised as per the usage.
 
+### Installing [Git](https://git-scm.com/)
+Follow steps [here](https://git-scm.com/download)
+
+### Learning [Git](https://git-scm.com/)
+[Wiki on Git](https://en.wikipedia.org/wiki/Git
+)
+You can learn Git using any of the following links:
+
+[Codecademy](https://www.codecademy.com/learn/learn-git), [try.github.io](https://try.github.io), [Atlassian](https://www.atlassian.com/git), [the simple guide](http://rogerdudler.github.io/git-guide/), [GitHub's Guide](https://guides.github.com) or by [checking out a video](https://www.youtube.com/results?search_query=git)
+
+Here's a short recap of the important and most commonly commands:
+#### [Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+- Cloning a repo : `git clone [repo-url-here]`
+- Initialising a **local** repo : `git init`
+- Check status : `git status`
+- Add or *stage* a file : `git add [file]`
+- Add or *stage* everything in the present directory : `git add .`
+- Unstage or *reset* a file : `git reset [file]`
+- Commit : `git commit -m "[commit-message]"`
+- Push repo : `git push`
 
 
-## Adding a new Quiz
 
-### Adding the Quiz Thumbnail
+### Before beginning
+
+You'll have to `config` your `git` settings from the command line in order to be able to `clone`/ `push`/ `pull` anything. (_Proxy sucks_)
+
+#### For first time configuration
+
+* Open Git Bash (_type `bash` in App search_)
+```sh    
+    $ git config --global user.name "your-name-here"
+    $ git config --global user.email "github-email-id-here"
+```
+* Use git with proxy server
+```sh
+  $ git config --global http.proxy http://172.30.0.16:3128
+  $ git config --global https.proxy https://172.30.0.16:3128
+```
+* Use git without proxy server
+```sh
+  $ git config --global --unset http.proxy
+  $ git config --global --unset https.proxy
+```
+
+
+
+
+##### [Fork](https://guides.github.com/activities/forking/) this repo, then [clone](https://help.github.com/articles/cloning-a-repository/) it onto your system, change directory, fire up your favorite text editor and open `index.html`
+
+##### Suggestions for text editor:
+
+[Sublime Text 3](https://www.sublimetext.com) : The go-to text editor. Coded in `C++` and `Python`, there is no match for its speed.
+
+[Atom](https://atom.io) : [GitHub](https://github.com)'s very own text editor, coded in [`Coffeescript`](http://coffeescript.org/) (a _flavour_ of `JavaScript`), `LESS`(a CSS _preprocessor_) and `HTML`. This one is a bit more `git` oriented.
+
+[Brackets](brackets.io) : A text editor by Adobe coded in `HTML`, `CSS` and `JS`, this one is the only one with `live-preview` capability built in; a boon if you're looking towards front-end development.
+
+### Adding a new Quiz
+
+#### Adding the Quiz Thumbnail
 
 > When replacing the variables such as `<- QuizName ->`, **remove the `<- ` *and* ` ->`**
 
-`Ctrl + F` : `QuizModal + Thumbnail`
+Where to add: `Ctrl + F` > `QuizModal + Thumbnail`
 
 1. Create thumbnail using **Paint**/ **Paint.net**/ **Photoshop**.
 
