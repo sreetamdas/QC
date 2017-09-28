@@ -254,7 +254,11 @@ $(document).ready(function () {
             //     populate_modal()
             //     $("#" + quiz.var_name + "QuizModal").modal();
             // });
-        }
+		}
+		$("#populate").append(`
+		<div class="col-lg-4 col-sm-12 bg-dark" style="height: 100%">
+			<h1 class=" orange infinity text-center" style="height: 100%; padding: 70px">More coming soon !<br>Stay Tuned !</h1>
+		</div>`);
     }
     populate_quizzes();
 

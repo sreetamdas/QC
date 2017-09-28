@@ -135,17 +135,72 @@
         </div>
     </section>
 
+    <section class="bg-dark" id="AGoogleADay">
+        <h1 class="text-center bohema" style="font-size: 4em">a <img src="img/google.png" height="90px"> a day</h1>
+        <hr class="light">
+        <p class="text-faded infinity text-center" style="font-size: 2.5em">
+            A Google a Day keeps the Quiz Masters away
+        </p>
+        <div class="container iframeContainer">
+            <iframe src="AGAD/index.html" id="agoogleaday" class="noScrolling" frameBorder="0" scrolling="no" style=""></iframe>
+            <style>
+                iframe::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+        </div>
 
-    <!-- jQuery -->
+    </section>
+    <div id="map"></div>
+
+    <section id="contact" class="bg-dark">
+    </section>
+
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+
+    <!-- For number counter -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
     <!-- Custom Theme JavaScript -->
-    <!-- <script src="js/creative.js"></script> -->
-    <script src="js/quizzes_new.js"></script>
-    <!-- <script src="js/testing.js"></script> -->
+    <script src="js/creative.js"></script>
+    <script src="js/typist.js"></script>
+    <script src="js/typistCustom.js"></script>
+    <script src="js/quizzes.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAuRnvOWRAnf6T3j1zWlVj-kSbVqyk-qWc"></script>
+    <script type="text/javascript" src="js/google.map.js"></script>
+    <script>
+        document.getElementById("#agoogleaday").scrollTop = 70;
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-68648431-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+            $(function () {
+                //  $("#header").load("header.html");
+                $("#contact").load("../footer.html");
+            });
+    </script>
 </body>
 
 </html>
