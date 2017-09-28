@@ -301,7 +301,7 @@ $(document).ready(function () {
         var final_html = html_begin + html + html_end;
 
         $("#some").append(final_html);
-
+	}
     // function open_quiz(quiz_id) {
     //     window.open(quizzes_matrix[quiz_id], '_blank');
     // }
