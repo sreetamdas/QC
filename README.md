@@ -1,4 +1,4 @@
-# [Quiz Club Website](http://sreetamdas.github.io/QC)
+# [Quiz Club, NIT Warangal](http://sreetamdas.github.io/QC)
 
 Theme used : [Creative](http://startbootstrap.com/template-overviews/creative/), a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
