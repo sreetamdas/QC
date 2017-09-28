@@ -40,14 +40,14 @@ $(document).ready(function () {
         /* */
         VigilanceQuizPrelimsModal : 'https://docs.google.com/presentation/d/e/2PACX-1vTzQQot7ovUFFawlziqiPZm5Dk4nay3MQpEjj0WO3M8kgClX4LAoIik8r9yFCp7f2u8mvmXkYNphftz/pub?start:false&amp;loop:false&amp;delayms:3000',
         VigilanceQuizFinalsModal : 'https://docs.google.com/presentation/d/e/2PACX-1vRRU_ZThGcLzuXigWs-E6x5ioqEqLv9cHhgIXhX1hyxLDXOikhsMdNvgGKwRnvcWW0kUdOTEwegEUHs/pub?start:false&amp;loop:false&amp;delayms:3000',
-    
+        
         MelaQuizModal : 'https://docs.google.com/presentation/d/1-4wVOslPm-mhHm3lpxPXeQijszeqm7K3TYfBmYGSJ_E/pub?start=false&loop=false&delayms=3000',
         
         
         
         /*
         Append Quiz embed links above here
-        */
+        */  
     
         /* Dont remove the next key : 'value' pair */
         Cyka : 'Blyat'
