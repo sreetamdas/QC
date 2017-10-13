@@ -293,28 +293,14 @@ $(document).ready(function () {
         </div>`;
         var html = "";
 
-        console.log("asdasdasd")
         for (var i = 0; i < param.rounds.length; i++) {
-            console.log("asd")
             
 			html += `
 			<a href="` + param.rounds[i].link + `" target="_blank" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">` + param.rounds[i].round_name + `</a>
             <p class="monospace"></p>`;
-            // console.log(html)
         }
         var final_html = html_begin + html + html_end;
 
         $("#some").append(final_html);
 	}
-    // function open_quiz(quiz_id) {
-    //     window.open(quizzes_matrix[quiz_id], '_blank');
-    // }
-
-    // $(".quiz_link").click(function () {
-    //     var quiz_id = $(this).attr('href');
-    //     // console.log("Clicked " + quiz_id);
-    //     quiz_id = quiz_id.substr(1);            // remove the '#' at the beginning
-    //     console.log("ID = " + quiz_id);
-    //     // open_quiz(quiz_id);
-    // });
 });
