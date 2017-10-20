@@ -359,6 +359,20 @@ $(document).ready(function () {
         ]
     }
 
+    var General = {
+        var_name: "General",
+        quiz_name: "General Quiz",
+        image: "img/Quizzes/General_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "Prelims",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vSzYbrHLV225a8VH4cL2cuYzWr-dWBI04qpN3cJXjq5X7ScgwRw7VuqMXYoDwH0GSIbk9iRxi_pF5md/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+
+    
     
 
     var variable_for_quiz_name = {
@@ -374,7 +388,7 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, Mela, Cricket, Comic, GoT, Auto, Anime];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, Cricket, Comic, GoT, Auto, Anime];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
