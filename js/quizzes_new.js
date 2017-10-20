@@ -148,7 +148,7 @@ $(document).ready(function () {
     var World = {
         var_name: "World",
         quiz_name: "World Quiz",
-        image: "img/Quizzes/World.png",
+        image: "img/Quizzes/World.jpg",
         caption: "",
         rounds: [
             {
@@ -229,7 +229,133 @@ $(document).ready(function () {
     //     image: ""
     // }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance];
+    var Mela = {
+        var_name: "MELA",
+        quiz_name: "The M.E.L.A. Quiz",
+        image: "img/Quizzes/MELA.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "The Quiz",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vTGNl01xSkBmneVBsm-jqASke7j8O049L9OiEEPJXwQGZn1BCj9KiL69r8VPRGK3vzvadw3YDkzkbYs/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+
+    var India_2017 = {
+        var_name: "India_2017",
+        quiz_name: "India Quiz",
+        image: "img/Quizzes/India_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "",
+                link: ""
+            }
+        ]
+    }
+
+    var BizTech = {
+        var_name: "BizTech",
+        quiz_name: "BizTech",
+        image: "img/Quizzes/BizTech_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "",
+                link: ""
+            }
+        ]
+    }
+
+    var Cricket = {
+        var_name: "Cricket",
+        quiz_name: "The Cricket Quiz",
+        image: "img/Quizzes/Cricket.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "The Quiz",
+                link: "https://drive.google.com/file/d/0B-zu3ZifXK2oQ1NST3BTRUplakk/view?usp=sharing"
+            }
+        ]
+    }
+
+    
+    var Sports_2017 = {
+        var_name: "Sports2017",
+        quiz_name: "Sports Quiz 2017",
+        image: "img/Quizzes/Sports_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "Prelims",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vRZRxdZatVhEHDktSgVLebxS3OiO538ZyqSl0Ps_oG8zY8fPsbKZlwWClZiDTySO9WsW4H8lMyDlxIX/pub?start=false&loop=false&delayms=3000"
+            },
+            {
+                round_name: "Finals",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vSkk4pufynGVmSf_6S6F7hLk3DxkZRk1Li8QeYahq5rohwcdQTqMOlekTEySk1Vyi8LWjEcR5J1bmyZ/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+    
+    var Comic = {
+        var_name: "Comic",
+        quiz_name: "Comic Quiz",
+        image: "img/Quizzes/Comic_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "",
+                link: ""
+            }
+        ]
+    }
+        
+    var GoT = {
+        var_name: "GameOfThrones",
+        quiz_name: "The Game Of Thrones Quiz",
+        image: "img/Quizzes/GameOfThrones_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "The Quiz",
+                link: "https://drive.google.com/file/d/0B1Bsde_h9jmPUElJNHl2SlVrZWM/view?usp=sharing"
+            }
+        ]
+    }
+            
+    var Auto = {
+        var_name: "Auto",
+        quiz_name: "The Auto Quiz",
+        image: "img/Quizzes/Auto.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "Prelims",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vT_DwQMi37EFiqJ8jI_fSHDYPB15lz61Uq7r7in8NyN6F20PbovFXlVqJ91e4QjgswSfngOblidIvMk/pub?start=false&loop=false&delayms=3000"
+            },
+            {
+                round_name: "Finals",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vR78unfl-IhfUwBpHokqQAW3hYHvvLlq1Q44JaIRfvcAR7Pz3KX04VPS1ecnBwtqIrnqaWXuYiSU1tH/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+
+    var variable_for_quiz_name = {
+        var_name: "<quiz_name without any commas, periods, and special characters>",
+        quiz_name: "<actual quiz name, like The MELA Quiz>",
+        image: "img/Quizzes/<insert filename here>",
+        caption: "",
+        rounds: [
+            {
+                round_name: "",
+                link: ""
+            }
+        ]
+    }
+
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, Mela, Cricket, Comic, GoT, Auto];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
