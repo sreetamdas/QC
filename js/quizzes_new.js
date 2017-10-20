@@ -341,6 +341,25 @@ $(document).ready(function () {
             }
         ]
     }
+                
+    var Anime = {
+        var_name: "Anime",
+        quiz_name: "The Anime Quiz",
+        image: "img/Quizzes/Anime.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "Prelims",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vS98suSvK-9qir0jkn-gATTFxRKc8lqocjtHjsRi_pxdB9BDVn7zUI4gXuKSnObnjhfhi5zUOlOtj0I/pub?start=false&loop=false&delayms=3000"
+            },
+            {
+                round_name: "Finals",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vTUio4FE79ORppJup6ksBaZKkiAI3JWg3PJteA8Br8Qht44uWFilimbQc8bNhOyXNUZ27Ktf2bMO7ZI/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+
+    
 
     var variable_for_quiz_name = {
         var_name: "<quiz_name without any commas, periods, and special characters>",
@@ -355,7 +374,7 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, Mela, Cricket, Comic, GoT, Auto];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, Mela, Cricket, Comic, GoT, Auto, Anime];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
