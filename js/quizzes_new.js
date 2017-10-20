@@ -26,11 +26,14 @@ $(document).ready(function () {
     }
     var QFactor = {
         var_name: "QFactor",
-        quiz_name: "QFactor Quiz",
+        quiz_name: "QFactor",
         image: "img/Quizzes/QFactor.jpg",
         caption: "",
         rounds: [
-
+            {
+                round_name: "Our spotlight Quiz during NIT Warangal's SpringSpree",
+                link: "https://www.facebook.com/QFactor2.0/"
+            }
         ]
     }
     var Bollywood = {
