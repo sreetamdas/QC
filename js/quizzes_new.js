@@ -225,13 +225,6 @@ $(document).ready(function () {
             }
         ]
     }
-    // to be added
-    // var Mela = {
-    // var_name: "Mela",//     
-    //     quiz_name: "MELA Quiz"
-    //     image: ""
-    // }
-
     var Mela = {
         var_name: "MELA",
         quiz_name: "The M.E.L.A. Quiz",
@@ -244,7 +237,6 @@ $(document).ready(function () {
             }
         ]
     }
-
     var India_2017 = {
         var_name: "India_2017",
         quiz_name: "India Quiz",
@@ -257,7 +249,6 @@ $(document).ready(function () {
             }
         ]
     }
-
     var BizTech = {
         var_name: "BizTech",
         quiz_name: "BizTech",
@@ -265,12 +256,11 @@ $(document).ready(function () {
         caption: "",
         rounds: [
             {
-                round_name: "",
-                link: ""
+                round_name: "The Quiz",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vRPjlDOPcn4eIKyq12P6sBeH_1RsC6c2ZHdHS4YiCPrxgzCuyxbbHrqqze1Iia-tD3LW27E3_fZ_Jen/pub?start=false&loop=false&delayms=3000"
             }
         ]
     }
-
     var Cricket = {
         var_name: "Cricket",
         quiz_name: "The Cricket Quiz",
@@ -283,8 +273,6 @@ $(document).ready(function () {
             }
         ]
     }
-
-    
     var Sports_2017 = {
         var_name: "Sports2017",
         quiz_name: "Sports Quiz 2017",
@@ -301,7 +289,6 @@ $(document).ready(function () {
             }
         ]
     }
-    
     var Comic = {
         var_name: "Comic",
         quiz_name: "Comic Quiz",
@@ -313,8 +300,7 @@ $(document).ready(function () {
                 link: ""
             }
         ]
-    }
-        
+    }      
     var GoT = {
         var_name: "GameOfThrones",
         quiz_name: "The Game Of Thrones Quiz",
@@ -326,8 +312,7 @@ $(document).ready(function () {
                 link: "https://drive.google.com/file/d/0B1Bsde_h9jmPUElJNHl2SlVrZWM/view?usp=sharing"
             }
         ]
-    }
-            
+    }           
     var Auto = {
         var_name: "Auto",
         quiz_name: "The Auto Quiz",
@@ -343,8 +328,7 @@ $(document).ready(function () {
                 link: "https://docs.google.com/presentation/d/e/2PACX-1vR78unfl-IhfUwBpHokqQAW3hYHvvLlq1Q44JaIRfvcAR7Pz3KX04VPS1ecnBwtqIrnqaWXuYiSU1tH/pub?start=false&loop=false&delayms=3000"
             }
         ]
-    }
-                
+    }               
     var Anime = {
         var_name: "Anime",
         quiz_name: "The Anime Quiz",
@@ -361,7 +345,6 @@ $(document).ready(function () {
             }
         ]
     }
-
     var General = {
         var_name: "General",
         quiz_name: "General Quiz",
@@ -391,24 +374,24 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, Cricket, Comic, GoT, Auto, Anime];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, Comic, GoT, Auto, Anime];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
             var quiz = quizzes[i];
-            var html = `
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#` + quiz.var_name + `QuizModal" data-toggle="modal" class="portfolio-box modal_link" id="` + quiz.var_name + `Quiz">
-                        <img src="`+ quiz.image + `" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-name">
-                                    ` + quiz.quiz_name + `
+            var html = `<div class="col-lg-4 col-sm-6">
+                            <a href="#` + quiz.var_name + `QuizModal" data-toggle="modal" class="portfolio-box modal_link" id="` + quiz.var_name + `Quiz">
+                                <img src="`+ quiz.image + `" class="img-responsive" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-name">
+                                            ` + quiz.quiz_name + `
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>`;
+                            </a>
+                        </div>`;
+                
             // console.log(html);
             $("#populate").append(html);
             // $("#" + quiz.var_name + "Quiz").click(function (e) { 
