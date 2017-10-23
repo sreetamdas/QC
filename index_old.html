@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quiz Club NITW</title>
+
+    <link rel='shortcut icon' type='image/png' href='/favicon.png' />
+    <link rel='shortcut icon' type='image/png' href='favicon.png' />
+    <link rel='icon' type='image/png' href='favicon.png' />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/typist.css" type="text/css">
+    <style type="text/css">
+        /* Set a size for our map container, the Google Map will take up 100% of this container */
+        
+        #map {
+            width: 100%;
+            height: 400px;
+        }
+        
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="FECwfiU1t1KubM-quk_xyDwT7bHdSgqCoxnHURvKix4" />
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll precursive no-padding" href="#page-top" style="display: flex"><img src="img/logoSmall.png" height="52px" style="padding-left: 10px"><span style="padding-top: 0.5em; padding-left: 0.5em">Quiz Club, NIT Warangal</span></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#info">Info</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#quizzes">Quizzes</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li id="apply">
+                        <a class="page-scroll" href="Apply/">Apply</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="banner" style="font-family: Precursive; font-size: 70px">Quiz Club @ NIT Warangal</h1>
+                <p></p>
+                <!--a class="btn btn-primary btn-xl page-scroll">Continue</a-->
+            </div>
+        </div>
+        <div id="scrollDown">
+            <a class="btn btn-primary btn-xl page-scroll" href="#info">Learn more</a>
+        </div>
+    </header>
+
+    <section id="info" class="bg-dark">
+        <!--div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading white-text">What we've accomplished so far</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-users text-primary orange"></i>
+                        <h3 class="white-text "><span class="white-text counter">2000</span> +</h3>
+                        <p class="text-muted infinity" style="font-size: 25px">attend our quizzes every year</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary orange" data-wow-delay=".3s"></i>
+                        <h3 class="white-text">Loved</h3>
+                        <p class="text-muted infinity" style="font-size: 25px">by all for our
+                            <br>out-of-the-box quizzes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info" class="primary-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!--h2>JavaScript is <strong class="typist-element" id="typist-element1" data-typist="ugly,,?not as good as CoffeeScript,? hello, testing"></strong>since it's JS</h2-->
+                    <h2 class="section-heading ailerons" style="font-size: 55px">Some of our previous Patrons</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/hero.png" height="120">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/abhyaas.png" width="250">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/pnb.png" height="165">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/logiquest.png" width="250">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/textnook.png" width="250">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/kfc.png" height="100">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/sbh.png" height="100">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/roposo.png" height="120">
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="service-box">
+                        <img src="img/Sponsors/telanganaTourism.png" height="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading ailerons orange" style="font-size: 4em">Meet the Club</h2>
+                    <hr class="light">
+                    <p class="text-faded infinity" style="font-size: 2.5em">
+                        The people who bring you amazing quizzes all year long
+                    </p>
+                    <a href="TheClub" class="btn btn-default btn-xl orange">The Club</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quizzes" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading orange ailerons" style="font-size: 60px">Our Quizzes</h2>
+                    <hr class="light">
+                    <p class="text-faded infinity" style="font-size: 2.5em">
+                        Test Yourself against Us
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#IndiaQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/India.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    India Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="IndiaQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">India Quiz</h4>
+                                <h4 class="trajanPro text-center" style="font-size: 22px">Testing the Indian Quotient!</h4>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#IndiaQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#IndiaQuizTopicsRoundModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Topics Round</a>
+                                <p class="monospace"></p>
+                                <a href="#IndiaQuizRound3Modal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Round 3</a>
+                                <p class="monospace"></p>
+                                <a href="#IndiaQuizLongConnectModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Long Connect</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#QFactorModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/QFactor.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Q Factor
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="QFactorModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Q Factor</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="trajanPro text-center" style="font-size: 22px">Our Flagship <strong><em>OPEN</em></strong> Quiz, going <strong><em>NATIONAL</em></strong> this edition!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#BollywoodQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Bollywood.jpeg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Bollywood Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="BollywoodQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Bollywood Quiz</h4>
+                                <h4 class="trajanPro text-center" style="font-size: 22px">Picture abhi baaki hai</h4>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#BollywoodQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#QuantaQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Quanta.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Quanta Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="QuantaQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Quanta Quiz</h4>
+                                <h4 class="trajanPro text-center" style="font-size: 22px">So You Think You're Tech-Savvy?</h4>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#QuantaQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#QuantaQuizFinalsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Finals</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#LogoQuiz" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Logo.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Logo Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="LogoQuiz" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Logo Quiz</h4>
+                                <h4 class="trajanPro text-center" style="font-size: 22px">Gotta Name 'em All</h4>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#LogoQuizAptitudeModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Aptitude</a>
+                                <p class="monospace"></p>
+                                <a href="#LogoQuizAddictionModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Addiction</a>
+                                <p class="monospace"></p>
+                                <a href="#LogoQuizEntertainmentModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Entertainment</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#ApotheosisModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Apotheosis.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Apotheosis
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="ApotheosisModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Apotheosis</h4>
+                                <p class="trajanPro text-center" style="font-size: 22px">The <strong><em>FIRST EVER</em></strong> written Inter NIT Quiz
+                                    <br>conceived by Quiz Club NITW's very own <a href="TheClub.html#NeelKarnik">Neel Karnik</a></p>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#ApotheosisQuizModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">The Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#EntertainmentQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Entertainment2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Entertainment Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="EntertainmentQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Entertainment Quiz</h4>
+                                <p class="trajanPro text-center" style="font-size: 22px">Entertainment Entertainment Entertainment</p>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#EntertainmentQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#EntertainmentQuizMemeGameModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Meme Game</a>
+                                <p class="monospace"></p>
+                                <a href="#EntertainmentQuizInfinitePounceModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Infinite Pounce</a>
+                                <p class="monospace"></p>
+                                <a href="#EntertainmentQuizYouMakeYourOwnLuckModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">You Make Your Own Luck</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#SportsQuiz" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Sports2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Sports Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="SportsQuiz" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">Sports Quiz</h4>
+                                <h4 class="trajanPro text-center" style="font-size: 22px">Olympics worthy</h4>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#SportsQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#SportsQuizFinalsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Finals</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#FarewellModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Farewell.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    The Farewell Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="FarewellModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">The Farewell Quiz</h4>
+                                <p class="trajanPro text-center" style="font-size: 22px"></p>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#FarewellQuizModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">The Quiz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#WorldQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/World.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    World Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="WorldQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">World Quiz</h4>
+                                <p class="trajanPro text-center" style="font-size: 22px">Going International on International Day!</p>
+                            </div>
+                            <div class="modal-body container text-center infinity noUnderline">
+                                <a href="#WorldQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#WorldQuizFinalsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">Finals</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#FreshersQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Freshers.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    Fresher's Quiz
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="FreshersQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title ailerons text-center" style="font-size: 58px">For the Freshers</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="orange trajanPro text-center" style="font-size: 22px">Inducing the Q-Factor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#FriendsQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Friends.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <span class="friends">The One with
+                                    <br>F.R.I.E.N.D.S.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="FriendsQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title friends text-center" style="font-size: 58px">The Friends Quiz</h4>
+                                <h4 class="modal-title trajanPro text-center" style="font-size: 30px">The One with the Feels</h4>
+                                <h4 class="modal-title trajanPro text-center" style="font-size: 22px">Could this <strong><em>BE</em></strong> any better?</h4>
+                            </div>
+                            <div class="modal-body container text-center friends noUnderline">
+                                <a href="#FriendsQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 34px">Prelims</a>
+                                <p class="monospace">Separate the wannabes from the real fans.
+                                    <br>
+                                    <br> ̿̿ ̿̿ ̿'̿'\̵͇̿̿\з= ( ▀ ͜͞ʖ▀) =ε/̵͇̿̿/’̿’̿ ̿ ̿̿ ̿̿ ̿̿</p>
+                                <a href="#FriendsQuizInfinitePounce" data-toggle="modal" class="text-center quiz_link" style="font-size: 34px">Infinite Pounce</a>
+                                <p class="monospace">How many times have you watched Friends?
+                                    <br>
+                                    <br>( ͡°( ͡° ͜ʖ( ͡° ͜ʖ ͡°)ʖ ͡°) ͡°)</p>
+                                <a href="#FriendsQuizChallengeRoundModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 34px">Challenge Round</a>
+                                <p class="monospace">2 Questions from each season, these are the real deal.
+                                    <br>
+                                    <br>(▀̿Ĺ̯▀̿ ̿)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#HarryPotterQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/HPQuiz.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <span class="harryPotter" style="font-size: 70px">The Harry Potter<br>Quiz<sup>tm</sup></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="HarryPotterQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title harryPotter text-center" style="font-size: 58px">The Harry Potter Quiz<sup>tm</sup></h4>
+                                <h4 class="modal-title trajanPro text-center" style="font-size: 30px">After All This Time?</h4>
+                                <h4 class="modal-title trajanPro text-center" style="font-size: 30px"><strong><em>Always.</em></strong></h4>
+                            </div>
+                            <div class="modal-body container text-center harryPotter noUnderline">
+                                <a href="#HarryPotterQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 74px">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#HarryPotterQuizFinalsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 74px">Finals</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#VigilanceQuizModal" data-toggle="modal" class="portfolio-box">
+                        <img src="img/Quizzes/Vigilance.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <span class="trajanPro">Vigilance Quiz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="VigilanceQuizModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+
+
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title trajanPro text-center" style="font-size: 58px">Vigilance Quiz</h4>
+                            </div>
+                            <div class="modal-body container text-center trajanPro noUnderline">
+                                <a href="#VigilanceQuizPrelimsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 44px">Prelims</a>
+                                <p class="monospace"></p>
+                                <a href="#VigilanceQuizFinalsModal" data-toggle="modal" class="text-center quiz_link" style="font-size: 44px">Finals</a>
+                                <p class="monospace"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add new quizzes here -->
+                <!-- Template follows -->
+
+                
+                
+                
+                
+                <!-- QuizModal + Thumbnail -->
+
+
+
+                <div class="col-lg-4 col-sm-12 bg-dark" style="height: 100%">
+                    <h1 class=" orange infinity text-center" style="height: 100%; padding: 70px">More coming soon !<br>Stay Tuned !</h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="AGoogleADay">
+        <h1 class="text-center bohema" style="font-size: 4em">a <img src="img/google.png" height="90px"> a day</h1>
+        <hr class="light">
+        <p class="text-faded infinity text-center" style="font-size: 2.5em">
+            A Google a Day keeps the Quiz Masters away
+        </p>
+        <div class="container iframeContainer">
+            <iframe src="AGAD/index.html" id="agoogleaday" class="noScrolling" frameBorder="0" scrolling="no" style=""></iframe>
+            <style>
+                iframe::-webkit-scrollbar {
+                    display: none;
+                }
+            </style>
+        </div>
+
+    </section>
+    <div id="map"></div>
+
+    <section id="contact" class="bg-dark">
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+
+    <!-- For number counter -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+    <script src="js/quizzes.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAuRnvOWRAnf6T3j1zWlVj-kSbVqyk-qWc"></script>
+    <script type="text/javascript" src="js/google.map.js"></script>
+    <script>
+        document.getElementById("#agoogleaday").scrollTop = 70;
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-68648431-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        $(function () {
+            //  $("#header").load("header.html");
+            $("#contact").load("../footer.html");
+        });
+    </script>
+
+</body>
+
+</html>
