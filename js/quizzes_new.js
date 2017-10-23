@@ -357,7 +357,18 @@ $(document).ready(function () {
             }
         ]
     }
-
+    var Mythology = {
+        var_name: "Mythology",
+        quiz_name: "The Mythology Quiz",
+        image: "img/Quizzes/Mythology.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "The Quiz",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vTrjdj7AGxAO702DZq4uROrdFRmcFu1lcwu1Uc8DgIVDB4gcD_Us3MpB6qWfmp26li_8BZP26M37kbx/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
     
     
 
@@ -374,7 +385,7 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, Comic, GoT, Auto, Anime];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, Comic, GoT, Anime, Mythology];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
