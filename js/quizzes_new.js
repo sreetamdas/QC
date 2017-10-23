@@ -385,7 +385,7 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, Comic, GoT, Anime, Mythology];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, GoT, Anime, Mythology];
 	
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
