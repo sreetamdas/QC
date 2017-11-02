@@ -300,7 +300,7 @@ $(document).ready(function () {
                 link: ""
             }
         ]
-    }      
+    }
     var GoT = {
         var_name: "GameOfThrones",
         quiz_name: "The Game Of Thrones Quiz",
@@ -312,7 +312,7 @@ $(document).ready(function () {
                 link: "https://drive.google.com/file/d/0B1Bsde_h9jmPUElJNHl2SlVrZWM/view?usp=sharing"
             }
         ]
-    }           
+    }
     var Auto = {
         var_name: "Auto",
         quiz_name: "The Auto Quiz",
@@ -328,7 +328,7 @@ $(document).ready(function () {
                 link: "https://docs.google.com/presentation/d/e/2PACX-1vR78unfl-IhfUwBpHokqQAW3hYHvvLlq1Q44JaIRfvcAR7Pz3KX04VPS1ecnBwtqIrnqaWXuYiSU1tH/pub?start=false&loop=false&delayms=3000"
             }
         ]
-    }               
+    }
     var Anime = {
         var_name: "Anime",
         quiz_name: "The Anime Quiz",
@@ -369,8 +369,20 @@ $(document).ready(function () {
             }
         ]
     }
-    
-    
+    var Vigilance_2017 = {
+        var_name: "Vigilance_2017",
+        quiz_name: "The Vigilance Quiz",
+        image: "img/Quizzes/Vigilance_2017.jpg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "The Quiz",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vTv6ZFUxw0E05xE_e1vpHDvkaih45nJRpRJ3Iu0N1CeYURkuM0CWtDTDYY_KPIu3bVeUDdEbg0_6sYi/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
+
+
 
     var variable_for_quiz_name = {
         var_name: "<quiz_name without any commas, periods, and special characters>",
@@ -385,8 +397,8 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, GoT, Anime, Mythology];
-	
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, GoT, Anime, Mythology, Vigilance_2017];
+
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
             var quiz = quizzes[i];
@@ -402,10 +414,10 @@ $(document).ready(function () {
                                 </div>
                             </a>
                         </div>`;
-                
+
             // console.log(html);
             $("#populate").append(html);
-            // $("#" + quiz.var_name + "Quiz").click(function (e) { 
+            // $("#" + quiz.var_name + "Quiz").click(function (e) {
             //     e.preventDefault();
             //     populate_modal()
             //     $("#" + quiz.var_name + "QuizModal").modal();
@@ -427,10 +439,10 @@ $(document).ready(function () {
         var found = (quizzes.find(function (v) {
             return v.var_name == modal_id;
 		}) || {});
-		
+
         populate_modal(found);
 	});
-	
+
     function populate_modal(param) {
 
         var html_begin = `
@@ -442,7 +454,7 @@ $(document).ready(function () {
                         <h4 class="modal-title ailerons text-center" style="font-size: 58px">` + param.var_name + `</h4>
                     </div>
                     <div class="modal-body container text-center infinity noUnderline">`;
-        var html_end = `                    
+        var html_end = `
                     </div>
                 </div>
             </div>
@@ -450,7 +462,7 @@ $(document).ready(function () {
         var html = "";
 
         for (var i = 0; i < param.rounds.length; i++) {
-            
+
 			html += `
 			<a href="` + param.rounds[i].link + `" target="_blank" class="text-center quiz_link" style="font-size: 50px; font-weight: 700">` + param.rounds[i].round_name + `</a>
             <p class="monospace"></p>`;
