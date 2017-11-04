@@ -369,6 +369,22 @@ $(document).ready(function () {
             }
         ]
     }
+    var Quanta_2017 = {
+        var_name: "Quanta2017",
+        quiz_name: "Quant-a-Qube",
+        image: "img/Quizzes/Quant-a-qube.jpeg",
+        caption: "",
+        rounds: [
+            {
+                round_name: "Prelims",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vQ_7zF8w9WtKYHsS7g0QZlghGsZpFU5f2AmnMOjYfn52iaSGUtIqb0FS_YKCsS60FxqtNBtjQdeYmam/pub?start=false&loop=false&delayms=3000"
+            },
+            {
+                round_name: "Finals",
+                link: "https://docs.google.com/presentation/d/e/2PACX-1vSM9G9VarMl0jM4GfoSz6_724-2edayr_JHfWuSGoJy1b391CjiR4vThKQiQ1kwc1JWY1BnszcdWcf_/pub?start=false&loop=false&delayms=3000"
+            }
+        ]
+    }
     var Vigilance_2017 = {
         var_name: "Vigilance_2017",
         quiz_name: "The Vigilance Quiz",
@@ -397,7 +413,7 @@ $(document).ready(function () {
         ]
     }
 
-	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, GoT, Anime, Mythology, Vigilance_2017];
+	var quizzes = [India, QFactor, Bollywood, Quanta, Logo, Apotheosis, Entertainment, Sports, Farewell, World, Freshers, Auto, Friends, HarryPotter, Vigilance, Sports_2017, General, Mela, BizTech, Cricket, GoT, Anime, Mythology, Quanta_2017, Vigilance_2017];
 
     function populate_quizzes() {
         for (var i = 0; i < quizzes.length; i++) {
